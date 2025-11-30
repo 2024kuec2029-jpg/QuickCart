@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickCart – Online Grocery Delivery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark"></div>
+    <div class="logo-text">QuickCart</div>
+    <span id="greeting"></span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" id="login-link">Login</a>
+  </nav>
+  <div class="cart-icon">
+    Cart
+    <span class="cart-count">0</span>
+  </div>
+</header>
+
+<div class="cart-overlay">
+  <div class="cart-panel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close">Close</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="cart-summary-row">
+        <span>Total</span>
+        <strong class="cart-total-amount">₹0</strong>
+      </div>
+      <button class="btn-primary" style="width:100%; margin-top:8px;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+</div>
+
+<main class="main">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Fresh groceries delivered across your city in under 30 minutes.</h1>
+      <p>
+        QuickCart connects local markets, trusted brands and your daily essentials into one smooth
+        delivery experience. Plan your meals, stock your kitchen and never miss out on fresh produce.
+      </p>
+
+      <div class="hero-badges">
+        <span class="hero-badge">Fresh fruits and vegetables</span>
+        <span class="hero-badge">Daily dairy, bakery and snacks</span>
+        <span class="hero-badge">No minimum order in select areas</span>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="window.location.href='products.html'">
+          Start Shopping
+        </button>
+        <button class="btn-secondary" onclick="window.location.href='#featured'">
+          View Today’s Picks
+        </button>
+      </div>
+
+      <div class="hero-meta">
+        Delivery slots available from 7 AM to 11 PM. Real-time tracking for your orders.
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://kashmir-food.com/cdn/shop/files/IMG_2453.webp?v=1706714997&width=3840"
+           alt="Indian vegetable market stall with fresh produce">
+    </div>
+  </section>
+
+  <section id="featured">
+    <h2 class="section-title">Featured for you</h2>
+    <p class="section-subtitle">
+      Handpicked essentials that are ordered most frequently by customers in your area.
+    </p>
+    <div id="home-featured" class="product-grid"></div>
+  </section>
+</main>
+
+<footer>
+  Copyright © 2025 QuickCart. All rights reserved.
+</footer>
+
+</body>
+</html>

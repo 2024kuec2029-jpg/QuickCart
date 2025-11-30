@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickCart – Products</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark"></div>
+    <div class="logo-text">QuickCart</div>
+    <span id="greeting"></span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" id="login-link">Login</a>
+  </nav>
+  <div class="cart-icon">
+    Cart
+    <span class="cart-count">0</span>
+  </div>
+</header>
+
+<div class="cart-overlay">
+  <div class="cart-panel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close">Close</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="cart-summary-row">
+        <span>Total</span>
+        <strong class="cart-total-amount">₹0</strong>
+      </div>
+      <button class="btn-primary" style="width:100%; margin-top:8px;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+</div>
+
+<main class="main">
+  <section>
+    <h1 class="section-title">Browse all products</h1>
+    <p class="section-subtitle">
+      Search across categories, apply filters and quickly add items to your cart. Prices shown are indicative.
+    </p>
+
+    <div class="filter-bar">
+      <div class="search-box">
+        <input id="product-search" placeholder="Search fruits, vegetables, staples, snacks, personal care...">
+      </div>
+      <div class="chip-group">
+        <div class="chip active" data-category="all">All</div>
+        <div class="chip" data-category="fruits">Fruits</div>
+        <div class="chip" data-category="vegetables">Vegetables</div>
+        <div class="chip" data-category="dairy">Dairy</div>
+        <div class="chip" data-category="staples">Staples</div>
+        <div class="chip" data-category="snacks">Snacks</div>
+        <div class="chip" data-category="personal-care">Personal Care</div>
+      </div>
+    </div>
+
+    <div id="all-products" class="product-grid"></div>
+  </section>
+</main>
+
+<footer>
+  Copyright © 2025 QuickCart. All rights reserved.
+</footer>
+
+</body>
+</html>

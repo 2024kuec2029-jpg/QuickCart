@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickCart – About</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark"></div>
+    <div class="logo-text">QuickCart</div>
+    <span id="greeting"></span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" id="login-link">Login</a>
+  </nav>
+  <div class="cart-icon">
+    Cart
+    <span class="cart-count">0</span>
+  </div>
+</header>
+
+<div class="cart-overlay">
+  <div class="cart-panel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close">Close</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="cart-summary-row">
+        <span>Total</span>
+        <strong class="cart-total-amount">₹0</strong>
+      </div>
+      <button class="btn-primary" style="width:100%; margin-top:8px;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+</div>
+
+<main class="main">
+  <section>
+    <h1 class="section-title">About QuickCart</h1>
+    <div class="text-block">
+      QuickCart is an Indian online grocery platform built to fit the rhythm of busy urban life.
+      Instead of visiting multiple stores for fruits, vegetables, staples and snacks, customers
+      can place a single order and receive everything at their doorstep in minutes.
+      <br><br>
+      Behind every delivery is a network of local markets, farmer partnerships and brand tie-ups.
+      Our operations team focuses on freshness, safe handling and transparent pricing so that
+      families can confidently rely on QuickCart for their weekly and monthly grocery planning.
+      <br><br>
+      With each new locality we add, our goal remains simple: make access to quality groceries
+      as easy as unlocking your phone.
+    </div>
+
+    <div class="info-card">
+      <div class="info-row">
+        <span>Founded</span>
+        <strong>2025</strong>
+      </div>
+      <div class="info-row">
+        <span>Operating cities</span>
+        <strong>Delhi NCR, Bengaluru, Mumbai, Pune</strong>
+      </div>
+      <div class="info-row">
+        <span>Average delivery time</span>
+        <strong>Under 25 minutes on eligible orders</strong>
+      </div>
+    </div>
+
+    <div style="margin-top:26px;">
+      <!-- About page image: replace src with any image showing delivery / team / operations if you prefer -->
+      <img src="https://images.pexels.com/photos/4393668/pexels-photo-4393668.jpeg?auto=compress&cs=tinysrgb&w=1200"
+           alt="Delivery executive with grocery bag"
+           style="width:100%; border-radius:22px; box-shadow:0 12px 30px rgba(0,0,0,0.24);">
+    </div>
+  </section>
+</main>
+
+<footer>
+  Copyright © 2025 QuickCart. All rights reserved.
+</footer>
+
+</body>
+</html>

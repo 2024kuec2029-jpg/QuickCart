@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickCart – Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark"></div>
+    <div class="logo-text">QuickCart</div>
+    <span id="greeting"></span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" id="login-link">Login</a>
+  </nav>
+  <div class="cart-icon">
+    Cart
+    <span class="cart-count">0</span>
+  </div>
+</header>
+
+<div class="cart-overlay">
+  <div class="cart-panel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close">Close</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="cart-summary-row">
+        <span>Total</span>
+        <strong class="cart-total-amount">₹0</strong>
+      </div>
+      <button class="btn-primary" style="width:100%; margin-top:8px;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+</div>
+
+<main class="main">
+  <section>
+    <h1 class="section-title">Contact and support</h1>
+    <div class="text-block">
+      Whether you have a question about an order, need help with a payment, or want to suggest
+      a new product for your locality, the QuickCart support team is available to help.
+      Our support desk operates every day from 7 AM to 11 PM so you always have a channel to reach us.
+    </div>
+
+    <div class="form-grid">
+      <div class="info-card">
+        <div class="info-row">
+          <span>Email</span>
+          <strong>support@quickcart.com</strong>
+        </div>
+        <div class="info-row">
+          <span>Customer care</span>
+          <strong>+91 98765 43210</strong>
+        </div>
+        <div class="info-row">
+          <span>Head office</span>
+          <strong>QuickCart Technologies Pvt. Ltd., New Delhi, India</strong>
+        </div>
+        <div style="margin-top:18px;">
+          <!-- Contact page image: replace src with any image showing customer support / office if you like -->
+          <img src="https://images.pexels.com/photos/8867438/pexels-photo-8867438.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               alt="Customer support discussion"
+               style="width:100%; border-radius:18px;">
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3 style="margin-bottom:14px;">Write to us</h3>
+        <label for="contact-name">Name</label>
+        <input id="contact-name" type="text" placeholder="Your name">
+        <label for="contact-email">Email</label>
+        <input id="contact-email" type="email" placeholder="you@example.com">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" placeholder="Share your query, feedback or concern"></textarea>
+        <button class="btn-primary" style="width:100%; margin-top:4px;">
+          Submit
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Copyright © 2025 QuickCart. All rights reserved.
+</footer>
+
+</body>
+</html>
